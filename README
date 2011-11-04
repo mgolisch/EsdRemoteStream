@@ -1,0 +1,4 @@
+This Systemmenu applet allows to switch between local and remote sound output.
+It allows sending sound to one of multiple configured esound or pulseaudio servers.
+It requires the esound macports package and Soundflower to be installed.
+It uses esound so sending audio to pulseaudio only works if the pulseaudioserver has the esdcompat module loaded.
