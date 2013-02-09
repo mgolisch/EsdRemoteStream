@@ -20,8 +20,9 @@ class EsdRemoteStream(NSObject):
         self.statusitem.setTitle_('EsdRemoteStream')
         problems = []
         # do we have esd installed?
-        if not  os.path.exists("/opt/local/bin/esd"):
-            problems.append("esd")
+        if not  os.path.exists("/opt/local/bin/esd") :
+            if not os.path.exists("/usr/local/bin/esd"):
+                problems.append("esd")
         # do we have soundflower installed?
         if not  os.path.exists("/System/Library/Extensions/Soundflower.kext"):
             problems.append("soundflower")

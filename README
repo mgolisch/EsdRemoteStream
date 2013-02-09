@@ -2,3 +2,8 @@ This Systemmenu applet allows to switch between local and remote sound output.
 It allows sending sound to one of multiple configured esound or pulseaudio servers.
 It requires the esound macports package and Soundflower to be installed.
 It uses esound so sending audio to pulseaudio only works if the pulseaudioserver has the protocol-esound tcp module loaded.
+
+1)run python setup.py build and python setup.py py2app
+2)run fix_appbundle.sh to set executable bit on support scripts
+3)edit hosts.conf with your esound/pulseuaudio hostnames in the appbundle
+4)copy appbundle to applications directory

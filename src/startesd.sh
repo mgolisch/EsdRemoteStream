@@ -1,5 +1,5 @@
 #start esd
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:$PATH
 echo "starting stream to $1"
 esd -tcp -bind ::1 & 
 sleep 2
